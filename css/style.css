@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+  height: 100vh;
+}
+.side-bar::-webkit-scrollbar{
+  display: none;
+}
+.main-container{
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+}
+.top-bar{
+  width: 100%;
+  min-height: 10vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.top-bar .logo{
+  padding: 20px 0;
+}
+.toggle-menu-icon{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.toggle-menu-icon:hover{
+  border: 1px solid rgb(202, 202, 202);
+}
+.toggle-menu-icon i{
+  font-size: 1.5rem;
+}
+.side-bar-container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.37);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9999;
+}
+.side-bar{
+  background-color: #fff;
+  overflow: auto;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  transition: .5s;
+  animation: animation1 .5s linear;
+}
+
+@keyframes animation1 {
+  0%{left: -100%;}
+  100%{left: 0;}
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.side-bar .logo{
+  padding: 20px;
+}
+ul.menu-container{
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu-item .menu-link{
+  display: flex;
+  align-items: center;
+  padding: 15px 20px 15px 50px;
+}
+.active{
+  background-color: rgb(235, 235, 235);
+}
+.menu-item .menu-link:hover{
+  background-color: rgb(235, 235, 235);
+}
+.menu-item .menu-link i{
+  font-size: 1.2rem;
+  padding-right: 30px;
+}
+.social-links{
+  align-self: center;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.social-links .social-link i{
+  font-size: 1.5rem;
+}
+
+/* sections */
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .container{
+  width: 1200px;
+  margin-inline: auto;
+  padding: 20px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Giveaway timer */
+section#timer{
+  display: flex;
+  justify-content: center;
+}
+section#timer .container{
+  display: flex;
+  gap: 40px;
+  padding: 50px 20px;
+}
+.phone-img, .giveaway-info{
+  flex: 1;
+}
+.phone-img{
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+section#timer .section-title{
+  padding: 0 0 10px 0;
+  /* color: ; */
+}
+.giveaway-info{
+  display:flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.giveaway-info .section-subtitle{
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.giveaway-info .para{
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.giveaway-timer{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #fff;
+}
+.giveaway-timer > div{
+  background: #000;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+
+
+/* About section */
+section#about{
+  background-color: #F1F5F8;
+}
+section#about .section-title, section#about .section-subtitle{
+  text-align: center;
+}
+.section-title{
+  font-size: 2.5rem;
+  padding: 20px 0;
+}
+.section-des{
+  padding: 0 0 30px 0;
+}
+.about-content{
+  display: flex;
+  padding-top: 30px;
+  gap: 20px;
+}
+.about-img, .about-text{
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about-img{
+  width: 100%;
+  /* max-width: 600px; */
+  height: 300px;
+}
+.about-text, .about-img{
+  border: 1px solid #999;
+  background-color: #fff;
+}
+.tabs{
+  display: flex;
+  align-items: center;
+  background-color: #DAE2EC;
+  justify-content: space-around;
+}
+.tab{
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.about-text-content{
+  padding: 10px;
+  text-align: justify;
+}
+
+/* go to top button style*/
+.go-top{
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
