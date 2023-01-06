@@ -1,0 +1,76 @@
+/* section add items */
+section#note{
+  background-color: #e7fde2c9;
+  padding: 30px;
+}
+section#note .container{
+  text-align: center;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+section#note .input-field{
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  display: flex;
+  margin: 20px 0;
+}
+section#note .input-field input{
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+section#note .input-field input[type=text]{
+  width: 100%;
+}
+section#note .input-field input[type=button]{
+  background-color: #A5D5F9;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+section#note .items-container{
+  display: flex;
+  flex-direction: column;
+}
+section#note .items-container .item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+section#note .items-container .item:hover{
+  background-color: #e7fde2c9;
+}
+section#note .items-container .item .item-ctrl-btn{
+  display: flex;
+  gap: 20px;
+}
+section#note .items-container .item .item-ctrl-btn button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+section#note .items-container .item .item-ctrl-btn button i{
+  font-size: 1.05rem;
+}
+.item-ctrl-btn button i.fa-edit{
+  color: green;
+}
+.item-ctrl-btn button i.fa-trash{
+  color: red;
+}
+section#note .clear-all{
+  color: red;
+  letter-spacing: 2px;
+  padding: 10px;
+  cursor: pointer;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-inline: auto;
+  margin-top: 20px;
+}
+section#note .clear-all:hover{
+  background-color: red;
+  color: #fff;
+}

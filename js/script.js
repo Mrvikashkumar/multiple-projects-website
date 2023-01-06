@@ -30,6 +30,22 @@ window.addEventListener('scroll', (e) => {
   }
 })
 
+// video
+let video = document.querySelector('.video');
+let switchBtn = document.querySelector('.switch-button')
+switchBtn.addEventListener('click', ()=>{
+  let toggle = switchBtn.lastElementChild;
+  if(toggle.classList.contains('play')){
+    video.play()
+    toggle.classList.remove('play')
+    toggle.classList.add('pause')
+  }else{
+    video.pause()
+    toggle.classList.add('play')
+    toggle.classList.remove('pause')
+  }
+})
+
 // faq
 // faq questions object
 let faqQues = [
@@ -121,22 +137,22 @@ let x = setInterval(function () {
 let aboutInfo = [
   {
     title: 'about',
-    img: "../img/about-us.jpg",
+    img: "./img/about-us.jpg",
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam deleniti obcaecati quia doloremque dolorum consectetur cupiditate distinctio. Aliquid delectus, asperiores numquam saepe nam officia iure perferendis repudiandae in dignissimos odio eligendi corrupti? Voluptas ducimus esse quasi et aspernatur qui, excepturi voluptate architecto consequatur libero in laborum nam praesentium ipsum impedit explicabo beatae dicta iure illum mollitia quia dolore numquam. Sit quia aut repudiandae cum saepe mollitia amet deleniti dolorem exercitationem, ipsa minima alias natus nisi sed, facilis perspiciatis soluta fugit vero eum. Amet fugiat atque qui quisquam. Dolore deserunt eius architecto aliquid et alias ea. Eum quos molestias praesentium?`,
   },
   {
     title: 'history',
-    img: "../img/History.png",
+    img: "./img/History.png",
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam deleniti obcaecati quia doloremque dolorum consectetur cupiditate distinctio. Aliquid delectus, asperiores numquam saepe nam officia iure perferendis repudiandae in dignissimos odio eligendi corrupti? Voluptas ducimus esse quasi et aspernatur qui, excepturi voluptate architecto consequatur libero in laborum nam praesentium ipsum impedit explicabo beatae dicta iure illum mollitia quia dolore numquam.`,
   },
   {
     title: 'vision',
-    img: "../img/Vision.png",
+    img: "./img/Vision.png",
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam deleniti obcaecati quia doloremque dolorum consectetur cupiditate distinctio. Aliquid delectus, asperiores numquam saepe nam officia iure perferendis repudiandae in dignissimos odio eligendi corrupti? Voluptas ducimus esse quasi et aspernatur qui, excepturi voluptate architecto consequatur libero in laborum nam praesentium ipsum impedit explicabo beatae dicta iure illum mollitia quia dolore numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam deleniti obcaecati quia doloremque dolorum consectetur cupiditate distinctio. Aliquid delectus, asperiores numquam saepe nam officia iure perferendis repudiandae in dignissimos odio eligendi corrupti? Voluptas ducimus esse quasi et aspernatur qui, excepturi voluptate architecto consequatur libero in laborum nam praesentium ipsum impedit explicabo beatae dicta iure illum mollitia quia dolore numquam.`,
   },
   {
     title: 'goal',
-    img: "../img/Goal.png",
+    img: "./img/Goal.png",
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam deleniti obcaecati quia doloremque dolorum consectetur cupiditate distinctio. Aliquid delectus, asperiores numquam saepe nam officia iure perferendis rliquid delectus, asperiores numquam saepe nam officia iure perferendis repudiandae in dignissimos odio eligendi corrupti? Voluptas ducimus esse quasi et aspernatur qui, excepturi voluptate architecto consequatur libero in laborum nam praesentium ipsum impedit explicabo beatae dicta iure illum mollitia quia dolore numquam.`,
   }
 ]
