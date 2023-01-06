@@ -10,86 +10,85 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Side bar</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
   <script src="js/script.js" defer></script>
 </head>
 
 <body>
   <div class="main-container" id="main-container">
-      <!-- top bar -->
-      <div class="top-bar">
+    <!-- top bar -->
+    <div class="top-bar">
+      <h1 class="logo">
+        <span>Coding</span>
+        <span>Addict</span>
+      </h1>
+      <div class="toggle-menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- side bar -->
+    <div class="side-bar-container">
+      <div class="side-bar">
         <h1 class="logo">
           <span>Coding</span>
           <span>Addict</span>
         </h1>
-        <div class="toggle-menu-icon">
-          <i class="fa-solid fa-bars"></i>
+        <ul class="menu-container">
+          <li class="menu-item">
+            <a href="#" class="menu-link active">
+              <i class="fa-solid fa-home"></i>
+              <span>HOME</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>PROJECTS</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span>PRODUCTS</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <i class="fa-solid fa-briefcase"></i>
+              <span>SERVICE</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <i class="fa-solid fa-user"></i>
+              <span>ABOUT</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <i class="fa-solid fa-address-book"></i>
+              <span>CONTACT</span>
+            </a>
+          </li>
+        </ul>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="social-link" title="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="social-link" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-link" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" class="social-link" title="social link">
+            <i class="fa-brands fa-instagram-square"></i>
+          </a>
         </div>
       </div>
-      <!-- side bar -->
-      <div class="side-bar-container">
-        <div class="side-bar">
-          <h1 class="logo">
-            <span>Coding</span>
-            <span>Addict</span>
-          </h1>
-          <ul class="menu-container">
-            <li class="menu-item">
-              <a href="#" class="menu-link active">
-                <i class="fa-solid fa-home"></i>
-                <span>HOME</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">
-                <i class="fa-solid fa-lightbulb"></i>
-                <span>PROJECTS</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>PRODUCTS</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">
-                <i class="fa-solid fa-briefcase"></i>
-                <span>SERVICE</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">
-                <i class="fa-solid fa-user"></i>
-                <span>ABOUT</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">
-                <i class="fa-solid fa-address-book"></i>
-                <span>CONTACT</span>
-              </a>
-            </li>
-          </ul>
-          <div class="social-links">
-            <a href="#" class="social-link" title="Facebook">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="#" class="social-link" title="Twitter">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#" class="social-link" title="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="#" class="social-link" title="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="#" class="social-link" title="social link">
-              <i class="fa-brands fa-instagram-square"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+    </div>
 
     <!-- Timer for phone giveaway -->
     <section id="timer">
@@ -99,8 +98,10 @@
         </div>
         <div class="giveaway-info">
           <h3 class="section-title">OLD IPHONE GIVEAWAY</h3>
-          <P class="section-subtitle">Giveaway Ends on Sunday,  January 2023 11:30am</P>
-          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repudiandae cumque tempore culpa qui unde ut facilis illum doloremque explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repudiandae cumque tempore culpa qui unde ut facilis illum doloremque explicabo?</p>
+          <P class="section-subtitle">Giveaway Ends on Sunday, January 2023 11:30am</P>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repudiandae cumque tempore
+            culpa qui unde ut facilis illum doloremque explicabo? Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Asperiores repudiandae cumque tempore culpa qui unde ut facilis illum doloremque explicabo?</p>
           <div class="giveaway-timer">
             <div class="days">10<br>DAYS</div>
             <div class="hours">08<br>HOURS</div>
@@ -110,6 +111,23 @@
         </div>
       </div>
     </section>
+
+    <!-- FAQ section -->
+    <section id="faq">
+      <div class="container">
+        <h3 class="section-title">
+          General Questions
+        </h3>
+        <p class="section-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi accusamus nulla quia
+          facilis atque quae magnam consectetur deserunt temporibus commodi?</p>
+        <div class="faq-content"></div>
+      </div>
+    </section>
+
+
+
+
+
     <!-- about us section -->
     <section id="about">
       <div class="container">

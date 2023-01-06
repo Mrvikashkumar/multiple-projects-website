@@ -1,0 +1,46 @@
+/* Giveaway timer */
+section#timer{
+  display: flex;
+  justify-content: center;
+}
+section#timer .container{
+  display: flex;
+  gap: 40px;
+  padding: 50px 20px;
+}
+.phone-img, .giveaway-info{
+  flex: 1;
+}
+.phone-img{
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+section#timer .section-title{
+  padding: 0 0 10px 0;
+}
+.giveaway-info{
+  display:flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.giveaway-info .section-subtitle{
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.giveaway-info .para{
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.giveaway-timer{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #fff;
+}
+.giveaway-timer > div{
+  background: #000;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}

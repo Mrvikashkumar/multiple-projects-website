@@ -1,0 +1,63 @@
+/* FAQ SECTION */
+section#faq{
+  background-color: #fff;
+  padding: 50px 0;
+}
+section#faq .container{
+  max-width: 700px;
+}
+section#faq .section-title, section#faq .section-subtitle{
+  text-align: center;
+}
+section#faq .section-title{
+  padding-bottom: 10px;
+}
+section#faq .section-subtitle{
+  font-size: .9rem;
+  padding-bottom: 20px;
+}
+section#faq .faq-content{
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section#faq .question{
+  /* padding: 10px; */
+  border-bottom: 1px solid #000;
+}
+section#faq .question:last-child{
+  border-bottom: none;
+}
+section#faq .question h5{
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+section#faq .question h5:hover{
+  background-color: rgba(199, 199, 199, 0.24);
+}
+section#faq .question p{
+  padding: 0 15px 0px 15px;
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+section#faq .question h5.show-ans ~ p{
+  height: auto;
+  padding: 10px 15px 10px 15px;
+}
+section#faq .question h5 i{
+  transition: .5s;
+}
+section#faq .question h5.show-ans i{
+  transform: rotate(180deg);
+  /* transition: .5s; */
+}
+
+
+
+
+

@@ -1,0 +1,42 @@
+/* About section */
+section#about{
+  background-color: #F1F5F8;
+}
+section#about .section-title, section#about .section-subtitle{
+  text-align: center;
+}
+.about-content{
+  display: flex;
+  padding-top: 30px;
+  gap: 20px;
+}
+.about-img, .about-text{
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about-img{
+  width: 100%;
+  /* max-width: 600px; */
+  height: 300px;
+}
+.about-text, .about-img{
+  border: 1px solid #999;
+  background-color: #fff;
+}
+.tabs{
+  display: flex;
+  align-items: center;
+  background-color: #DAE2EC;
+  justify-content: space-around;
+}
+.tab{
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.about-text-content{
+  padding: 10px;
+  text-align: justify;
+}
