@@ -13,14 +13,14 @@ section#note .input-field{
   display: flex;
   margin: 20px 0;
 }
-section#note .input-field input, .input-field button[type=button]{
+section#note input, .input-field button[type=button]{
   padding: 10px;
   background-color: transparent;
   border: none;
   outline: none;
   font-size: 1.1rem;
 }
-section#note .input-field input[type=text]{
+section#note .input-field input{
   width: 100%;
 }
 section#note .input-field button[type=button]{
@@ -44,6 +44,7 @@ section#note .items-container .item{
 }
 section#note .items-container .item:hover{
   background-color: #e7fde2c9;
+  /* background-color: #beffb0c9; */
 }
 section#note .items-container .item .item-ctrl-btn{
   display: flex;
@@ -57,7 +58,7 @@ section#note .items-container .item .item-ctrl-btn button{
 section#note .items-container .item .item-ctrl-btn button i{
   font-size: 1.05rem;
 }
-.item-ctrl-btn button i.fa-edit{
+.item-ctrl-btn button i.fa-pen{
   color: green;
 }
 .item-ctrl-btn button i.fa-trash{

@@ -16,3 +16,13 @@
     max-width: 400px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  section#note{
+    padding: 0;
+  }
+  section#note input, .input-field button[type=button]{
+    padding: 5px;
+    font-size: .9rem;
+  }
+}
