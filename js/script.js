@@ -133,6 +133,29 @@ let x = setInterval(function () {
 }, 1000)
 
 
+// add note items
+let addBtn = document.querySelector('#addBtn');
+let itemContainer = document.querySelector('.items-container');
+function addItems(e){
+  let inputText = addBtn.previousElementSibling;
+  let item = inputText.value;
+  let li = document.createElement('li');
+  li.className = 'item'
+  li.innerHTML = `<span class="item-name">${item}</span>
+  <div class="item-ctrl-btn">
+    <button type="button" title="edit">
+      <i class="fa-solid fa-edit"></i>
+    </button>
+    <button type="button" title="delete">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+  </div>`
+  itemContainer.append(li)
+}
+addBtn.addEventListener('click', addItems)
+
+
+
 // Object for about section
 let aboutInfo = [
   {

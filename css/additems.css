@@ -13,7 +13,7 @@ section#note .input-field{
   display: flex;
   margin: 20px 0;
 }
-section#note .input-field input{
+section#note .input-field input, .input-field button[type=button]{
   padding: 10px;
   background-color: transparent;
   border: none;
@@ -23,10 +23,13 @@ section#note .input-field input{
 section#note .input-field input[type=text]{
   width: 100%;
 }
-section#note .input-field input[type=button]{
+section#note .input-field button[type=button]{
   background-color: #A5D5F9;
   padding: 10px 20px;
   cursor: pointer;
+}
+section#note .input-field button[type=button]:hover{
+  background-color: aquamarine;
 }
 section#note .items-container{
   display: flex;
