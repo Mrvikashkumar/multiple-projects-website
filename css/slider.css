@@ -5,11 +5,12 @@ section#slider{
   position: relative;
 }
 section#slider .container{
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: auto;
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 section#slider .sliders-container{
   width: 100%;
@@ -149,4 +150,97 @@ section#slider .slider:first-child{
 }
 .slider-btn button i{
   font-size: 5rem;
+}
+
+/* style form */
+.form-container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(3, 176, 182, 0.966);
+  border: 1px solid #000;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  animation: open-form 0.2s linear;
+}
+@keyframes open-form {
+  0%{transform: scale(0);}
+  100%{transform: scale(1);}
+}
+@keyframes close-form {
+  0%{transform: scale(1);}
+  100%{transform: scale(0);}
+}
+.form-header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+  padding: 20px;
+  position: relative;
+}
+.close{
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.541);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.close:hover{
+  background-color: #fff;
+}
+.form-container .form{
+  max-width: 600px;
+  width: 90%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: auto;
+}
+.form-container .form::-webkit-scrollbar{
+  display: none;
+}
+.form .input-field{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+.input-group{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+}
+.form input, .form textarea{
+  width: 100%;
+  outline: none;
+  padding: 5px;
+  border: 1px solid #000;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+.form textarea{
+  height: 100px;
+  resize: vertical;
+}
+.form .button-group{
+  display: flex;
+  gap: 10px;
+}
+.form .button-group button{
+  background-color: #000 !important;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
 }
