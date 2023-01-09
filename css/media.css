@@ -1,4 +1,14 @@
 /* At 800px */
+@media screen and (max-width: 850px) {
+  section#slider .section-title{
+    font-size: 2rem;
+  }
+  section#slider .slider-header button{
+    font-size: .9rem;
+    padding: 10px;
+    gap: 10px;
+  }
+}
 @media screen and (max-width: 800px) {
   section#timer .container{
     flex-direction: column;
@@ -14,6 +24,33 @@
   .about-img {
     margin-inline: auto;
     max-width: 400px;
+  }
+}
+@media screen and (max-width: 700px) {
+  section#slider .slider-header{
+    padding: 0 0 30px 0;
+  }
+  section#slider .slider-header button{
+    border-radius: 50%;
+  }
+  section#slider .slider-header button span{
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  section#slider .slider-header{
+    justify-content: center;
+    text-align: center;
+  }
+  section#slider .slider-header .Write-about-us{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+  }
+  section#slider .slider-header button{
+    background-color: #000;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.808);
   }
 }
 
