@@ -1,4 +1,9 @@
 /* At 800px */
+@media screen and (max-width: 1000px) {
+  section#slider .slider{
+    min-width: calc(100% / 2 - 10px);
+  }
+}
 @media screen and (max-width: 850px) {
   section#slider .section-title{
     font-size: 2rem;
@@ -10,6 +15,9 @@
   }
 }
 @media screen and (max-width: 800px) {
+  section#slider .slider{
+    min-width: calc(100% / 1.5);
+  }
   section#timer .container{
     flex-direction: column;
     align-items: center;
@@ -38,6 +46,9 @@
   }
 }
 @media screen and (max-width: 550px) {
+  section#slider .slider{
+    min-width: calc(100%);
+  }
   section#slider .slider-header{
     justify-content: center;
     text-align: center;
@@ -55,6 +66,31 @@
 }
 
 @media screen and (max-width: 400px) {
+  .slider .slider-top{
+    align-items:flex-start;
+  }
+  .slider .slider-top .img{
+    min-width: 60px;
+    height: 60px;
+  }
+  .slider .slider-top .name{
+    font-size: 1.3rem;
+  }
+  .slider .slider-top .profession{
+    font-size: .8rem;
+  }
+  .slider .working-with > div{
+    font-size: .6rem;
+  }
+  .fa-quote-left{
+    font-size: 4rem;
+  }
+  .slider .what-he-say{
+     -webkit-line-clamp: 7;
+  }
+  .slider-btn button i{
+    font-size: 2rem;
+  }
   section#note{
     padding: 0;
   }
